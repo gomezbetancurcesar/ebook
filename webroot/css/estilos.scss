@@ -1,0 +1,69 @@
+$headerBG: #181A1D;
+
+body{
+    color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    padding: 0px;
+    width: 100%;
+    .logo{
+        background-color: $headerBG;
+        color: #fff;
+        height: 90px;
+        padding: 2px 60px 15px 80px;
+        h1{
+            margin: 0px;
+        }
+        .logotipo{
+            padding-top:20px;
+        }
+        .login{
+            padding-right:0px;
+            a{
+                color: #fff;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .arrow{
+                background-image: url('../img/login-arrow.png');
+                height: 16px;
+                width: 16px;
+                display: inline-block;
+                position: absolute;
+                top: 2px;
+                right: 12px;
+                &.active{
+                    background-position: 21px;
+                }
+            }
+        }
+    }
+    .menu{
+        color: red;
+        border-bottom: 1px solid #C3C3C3;
+        height: 35px;
+        ul{
+            margin:0;
+            li{
+                display: inline;
+                a{
+                    color: #5F5F5F;
+                    padding: 0px 20px 15px;
+                    text-decoration: none;
+                    border-radius: 4px 4px 0 0;
+                    margin-bottom:0px;
+                    &:hover, &.active{
+                        background-color: #fff;
+                        color:#16984D;
+                        border-bottom:4px solid #16984D;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
